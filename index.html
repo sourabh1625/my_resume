@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+             display: flex;
+             justify-content: center;
+             background-color: rgb(8, 139, 153);
+             box-shadow: 10px 7px 10px black;
+        }
+        .portfolio{
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+        }
+        .section_1{
+            background-color: blue;
+        }
+        .passport_section{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .passport{
+            width: 290px;
+            height: 225px;
+            margin-top: 20px;
+            margin-bottom: 140px;
+        }
+        .img{
+            border: 10px solid rgb(8, 139, 153);
+            border-radius: 100px;
+            box-shadow: 15px 10px 10px black;
+        }
+       .about{
+         display: grid;
+         grid-template-columns: 6fr 6fr;
+         height: 910px;
+         background-color: rgb(8, 139, 153);
+         box-shadow: 10px 7px 10px black;
+       }
+       .about_div_1{
+          border: 2px solid black;
+          padding: 10px;
+          margin: 10PX;
+          background-color: white;
+       }
+       .about_div_2{
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10PX;
+        background-color: white;
+       }
+       footer{
+        border: 5px double black;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(8, 139, 153);
+        box-shadow: 10px 7px 10px black;
+        
+       }
+       .footer_div{
+         border: 2px dotted black;
+         height: 100px;
+         width: 60%;
+         background-color: white;
+       }
+       .abour_me{
+            text-align: justify;
+        }
+        .career_objective{
+            text-align: justify;
+        }
+
+       @media screen and (orientation:portrait){
+         
+        .about{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+         
+            height: 1780px;
+        }
+        footer{
+            margin-top: 10px;
+            height: 180px;
+        }
+        .about_div_1{
+            border-radius: 10px;
+            margin-top: 40px;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .about_div_2{
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .footer_div{
+            height: 140px;
+        }
+        .abour_me{
+            text-align: justify;
+        }
+        .career_objective{
+            text-align: justify;
+        }
+        .passport{
+            margin-left: -15px;
+        }
+       }
+    </style>
+</head>
+<body>
+ <header>
+    <div>
+         <p> <span style="width: 50px; height: 35px;"><img src="./person.png" width="50px" height="35px"></span> <span class="portfolio"> My Portfolio</span></p>
+    </div>
+ </header>
+<section class="passport_section">
+    <div class="passport">
+        <img src="./passport.jpg" width="100%" class="img">
+    </div>
+</section>    
+    <hr>
+  <div class="about">
+        <div class="about_div_1">
+            <div style="padding: 10px;">
+                <h1 style="text-align: center;">About me</h1>
+                <p class="abour_me">
+                    I am Sourabh Gupta an aspiring UI learning fresher who is trying to seek a role to enhance and explore my technical knowledge  in your company    
+                </p>
+            </div>
+
+            <div style="padding: 10px;">
+                <h1 style="text-align: center;">Career Objective</h1>
+                <p class="career_objective">
+                    I want to be a part of renewed organization & to contribute towards the growth of the organization based on my personal capabilities by learning from the new exposure withinh the structured frame of work
+                </p>
+            </div>
+
+            <div style="padding: 15px; margin-top: -10px;">
+                <h1  style="text-align: center;">Contact</h1>
+                <fieldset style="margin: 10px;">
+                    <legend>Mobile No.</legend>
+                    <p>8109684478</p>
+                </fieldset>
+                <fieldset style="margin: 10px;">
+                    <legend>Email</legend>
+                    <p>sourabhpnd3995@gmail.com</p>
+                </fieldset>
+                <fieldset style="margin: 10px;">
+                    <legend>Address</legend>
+                    <p>Pendra-Road (Chhattisgarh)<br>
+                        Pin Code: 495117
+                    </p>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="about_div_2">
+                <div style="padding: 20PX;">
+                    <h1 style="text-align: center;">Skills</h1>
+                     <fieldset>
+                        <legend>Ui Technologies</legend>
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                            <li>Node Js</li>
+                            <li>Express Js</li>
+                            <li>Mongodb</li>
+                        </ul>
+                     </fieldset>
+                </div>
+
+                <div>
+                    <h1  style="text-align: center;">Projects</h1>
+                    <fieldset>
+                        <legend>Projects</legend>
+                        <ol style="margin-left: -18px;">
+                            <li style="color: blue; font-size: 13px;">https://sourabh1625.github.io/shopper/</li>
+                            <li style="color: blue; font-size: 13px;">https://sourabh1625.github.io/amazon_site/</li>
+                        </ol>
+                    </fieldset>
+                </div>
+
+                <div style="padding: 20px; margin-top: -5px;">
+                    <h1  style="text-align: center;">Language Known</h1>
+                    <fieldset>
+                        <legend>Language</legend>
+                        <ul>
+                            <li>English</li>
+                            <li>Hindi</li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+               
+        </div>
+  </div>
+
+  <br>
+  <br>
+  
+  <footer>
+        <div class="footer_div">
+            <h1 style="margin-top: -1px; text-align: center;">Declaration</h1>
+            <p style="margin-top: -16px; text-align: center;">I hereby affirm that the information is provided in this portfolio is true & correct to the best of my knowledge</p>
+        </div>
+  </footer>
+</body>
+</html>
